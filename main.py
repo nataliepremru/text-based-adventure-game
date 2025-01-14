@@ -42,10 +42,28 @@ def room7():
     print("")
 
 def room8():
-    print("")
+    print("Game Over")
 
 def room9():
-    print("")
+    print("Window")
+
+def room10():
+    print("Window")
+
+def room11():
+    print("Window")
+
+def room12():
+    print("Window")
+
+def room13():
+    print("Window")
+
+def room14():
+    print("Window")
+
+def room15():
+    print("Window")
 
 def choose_direction(current):
     choosen_direction = input("left or right (r/l): ").lower()
@@ -74,6 +92,21 @@ def choose_direction(current):
                 TRACK.append(5)
             else:
                 print("Please choose a direction")
+    elif current == 4:
+        if choosen_direction == "l":
+            room6()
+            TRACK.append(6)
+        elif choosen_direction == "forward":
+            room7()
+            TRACK.append(7)
+        elif choosen_direction == "r":
+            room8()
+            TRACK.append(8)
+        else:
+            print("Please choose a direction")
+    elif current == 5:
+        print("Only forward")
+        room9()
 
 def prison_break():
     cell()
