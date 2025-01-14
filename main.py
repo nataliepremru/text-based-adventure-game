@@ -48,22 +48,22 @@ def room9():
     print("Window")
 
 def room10():
-    print("Window")
+    print("")
 
 def room11():
-    print("Window")
+    print("")
 
 def room12():
-    print("Window")
+    print("")
 
 def room13():
-    print("Window")
+    print("")
 
 def room14():
-    print("Window")
+    print("")
 
 def room15():
-    print("Window")
+    print("")
 
 def choose_direction(current):
     choosen_direction = input("left or right (r/l): ").lower()
