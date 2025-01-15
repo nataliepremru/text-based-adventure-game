@@ -1,13 +1,3 @@
-
-# def turn_r():
-#     print("You have chosen to turn r")
-
-# def turn_l():
-#     print("You have chosen to turn l")
-
-# def walk_straight():
-#     print("You have chosen to walk straigh")
-
 TRACK = []
 
 def choose_direction(current):
@@ -149,7 +139,7 @@ def room10():
 
 def room11():
     TRACK.append(11)
-    print("Break")
+    print("Staff exit")
     print("Congratz!")
 
 def room12():
@@ -174,7 +164,7 @@ def room15():
 
 def prison_break():
     cell()
-    print(TRACK)
+    print(f"This is the route you have taken {TRACK}")
 
 
 prison_break()
