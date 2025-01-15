@@ -10,107 +10,114 @@
 
 TRACK = []
 
-def cell():
-    print("Start")
-    choose_direction(0)
-
-def room1():
-    print("Guard dog is sleeping")
-    # print("Game Over!")
-    choose_direction(1)
-
-def room2():
-    print("Prison Guard")
-    print("Game Over!")
-    exit()
-
-def room3():
-    print("Guard Dog")
-    print("Game Over!")
-    exit()
-
-def room4():
-    print("Canteen")
-
-def room5():
-    print("Toilet with company")
-
-def room6():
-    print("")
-
-def room7():
-    print("")
-
-def room8():
-    print("Game Over")
-
-def room9():
-    print("Window")
-
-def room10():
-    print("")
-
-def room11():
-    print("")
-
-def room12():
-    print("")
-
-def room13():
-    print("")
-
-def room14():
-    print("")
-
-def room15():
-    print("")
-
 def choose_direction(current):
-    choosen_direction = input("left or right (r/l): ").lower()
+    choosen_direction = input("left or right or forward or back (r/l/f/b): ").lower()
     if current == 0:
-        # choosing = True
-        # while choosing:
             if choosen_direction == "l":
                 room1()
-                TRACK.append(1)
-                # choosing = False
             elif choosen_direction == "r":
                 room2()
-                # choosing = False
             else:
                 print("Please choose a direction")
-                # continue
     elif current == 1:
             if choosen_direction == "l":
                 room3()
-                TRACK.append(3)
             elif choosen_direction == "forward":
                 room4()
-                TRACK.append(4)
             elif choosen_direction == "r":
                 room5()
-                TRACK.append(5)
+            elif choosen_direction == "b":
+                cell()
             else:
                 print("Please choose a direction")
+                room1()
     elif current == 4:
         if choosen_direction == "l":
             room6()
-            TRACK.append(6)
         elif choosen_direction == "forward":
             room7()
-            TRACK.append(7)
         elif choosen_direction == "r":
             room8()
-            TRACK.append(8)
         else:
             print("Please choose a direction")
     elif current == 5:
         print("Only forward")
         room9()
 
+def cell():
+    TRACK.append(0)
+    print("Start")
+    choose_direction(0)
+
+
+def room1():
+    TRACK.append(1)
+    print("Guard dog is sleeping")
+    # print("Game Over!")
+    choose_direction(1)
+
+def room2():
+    TRACK.append(2)
+    print("Prison Guard")
+    print("Game Over!")
+
+def room3():
+    TRACK.append(3)
+    print("Guard Dog")
+    print("Game Over!")
+
+def room4():
+    TRACK.append(4)
+    print("Canteen")
+
+def room5():
+    TRACK.append(5)
+    print("Toilet with company")
+
+def room6():
+    TRACK.append(6)
+    print("")
+
+def room7():
+    TRACK.append(7)
+    print("")
+
+def room8():
+    TRACK.append(8)
+    print("Game Over")
+
+def room9():
+    TRACK.append(9)
+    print("Window")
+
+def room10():
+    TRACK.append(10)
+    print("")
+
+def room11():
+    TRACK.append(11)
+    print("")
+
+def room12():
+    TRACK.append(12)
+    print("")
+
+def room13():
+    TRACK.append(13)
+    print("")
+
+def room14():
+    TRACK.append(14)
+    print("")
+
+def room15():
+    TRACK.append(15)
+    print("")
+
+
 def prison_break():
     cell()
-    TRACK.append(0)
+    print(TRACK)
 
 
 prison_break()
