@@ -9,6 +9,12 @@ def choose_direction(current):
                 room1()
             elif choosen_direction == "r":
                 room2()
+            elif choosen_direction == "f":
+                print("Ow! You run into a wall... Choose again")
+                cell()
+            elif choosen_direction == "b":
+                print("Ow! You run into a wall... Choose again")
+                cell()
             else:
                 print("Please choose a direction")
                 cell()
@@ -44,6 +50,12 @@ def choose_direction(current):
             room9()
         elif choosen_direction == "b":
             room1()
+        elif choosen_direction == "l":
+            print("You run into a cubicle, theres no where to go from here. Choose again.")
+            room5()
+        elif choosen_direction == "r":
+            print("Ow! You run into a sink. Choose again.")
+            room5()
         else:
             print("Please choose a direction")
             room5()
@@ -66,6 +78,12 @@ def choose_direction(current):
             room4()
         elif choosen_direction == "b":
             room4()
+        elif choosen_direction == "l":
+            print("Ow! You run into a wall. Choose again.")
+            room7()
+        elif choosen_direction == "r":
+            print("Ow! You run into a wall. Choose again.")
+            room7()
         else:
             print("Please choose a direction")
             room7()
@@ -77,74 +95,77 @@ def choose_direction(current):
             room15()
         elif choosen_direction == "b":
             room5()
+        elif choosen_direction == "f":
+            print("Ow! You run into the fence. Choose again.")
+            room9()
         else:
             print("Please choose a direction")
             room9()
 
 
 def cell():
-    print("Start")
+    print("Hello, welcome to Pentonville Prison.\n You are an inmate serving a life sentence for a crime you did you not commit. \n About 2 hours ago a guard dropped his keys as he passed your cell but it wasn't a good time to leave. \n The coast is finally clear... this is your chance... you unlock the door...\n You are stood in the hallway and you can go either left or right. \n Which do you choose?")
     TRACK.append(0)
     choose_direction(0)
 
 def room1():
     TRACK.append(1)
-    print("Guard dog is sleeping")
+    print("At the end of the hallway you find a guard dog sleeping.\n You can either go left, right or forward.\n Which do you chose?")
     choose_direction(1)
 
 def room2():
     TRACK.append(2)
-    print("Prison Guard")
+    print("You run into a guard, game over.")
     print("Game Over!")
 
 def room3():
     TRACK.append(3)
-    print("Guard Dog")
+    print("You have woken up the dog, game over.")
     print("Game Over!")
 
 def room4():
     TRACK.append(4)
-    print("Canteen")
+    print("You find yourself in the canteen.\n Luckily no one is here right now.\n There are three possible doors to take, which one do you chose? ")
     choose_direction(4)
 
 def room5():
     TRACK.append(5)
-    print("Toilet with company")
+    print("You have entered the toilets where you find your friend.\n He tells you theres a rumour of a gap in the fence but doesn't know where.\n It seems theres nowhere else to go apart from forwards out the window.\n They offers to give you a lift, what do you decide to do? ")
     choose_direction(5)
 
 def room6():
     TRACK.append(6)
-    print("Empty Guardroom with keys")
+    print("You have found yourself in the guards room... by some miracle theres no guards in here right now and theres a set of keys for the staff exit on the table.\n However theres three possible doors to take and you don't have time to try them all.\n Which one do you chose?")
     choose_direction(6)
 
 def room7():
     TRACK.append(7)
-    print("Storage Room")
+    print("You are in a storage cupboard with nowhere else to go, you must turn back.")
     choose_direction(7)
 
 def room8():
     TRACK.append(8)
-    print("Kitchen Alarm")
+    print("You enter the kitchen but the chef is on duty cooking tonight's dinner.\n In a panic he rings the alarm, game over.")
     print("Game Over")
 
 def room9():
     TRACK.append(9)
-    print("Window to courtyard")
+    print("You are now in the courtyard.\n You remember your friend telling you about a gap in the fence but was it right or left?")
     choose_direction(9)
 
 def room10():
     TRACK.append(10)
-    print("Guard")
+    print("You're in the staff toilets where you run into a guard, game over.")
     print("Game Over")
 
 def room11():
     TRACK.append(11)
-    print("Staff exit")
-    print("Congratz!")
+    print("You successfully exit through the staff exit without being caught.")
+    print("Congratulations!")
 
 def room12():
     TRACK.append(12)
-    print("Guard")
+    print("The door leads out to the courtyard where you get spotted by a guard, game over.")
     print("Game Over")
 
 # def room13():
@@ -153,12 +174,12 @@ def room12():
 
 def room14():
     TRACK.append(14)
-    print("Hole in fence")
+    print("You found the hole in the fence and succesfully escaped Pentonville.\n Congratulations.")
     print("Congratz!")
 
 def room15():
     TRACK.append(15)
-    print("Spotted")
+    print("You get spotted by a guard on the watch tower, game over.")
     print("Game Over")
 
 

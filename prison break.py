@@ -25,7 +25,7 @@ def prison_break():
                 ## condition for chosing left at the courtyard
                 if court_yard_choice == "l":
                     print("You go left.\n You found the hole in the fence and succesfully escaped Pentonville.\n Congratulations.")
-                ## conditino for chosing right at the courtyard    
+                ## conditino for chosing right at the courtyard  
                 elif court_yard_choice == "r":
                     print("You go right.\n You get spotted by a guard on the watch tower, game over.")
                 ## condition for any other input at the courtyard
