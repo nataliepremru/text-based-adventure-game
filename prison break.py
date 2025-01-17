@@ -12,6 +12,7 @@ def prison_break():
         ## condition for user chosing left at the sleeping dog
         if sleeping_dog_choice == "l":
             print("You go left.\n You have woken up the dog, game over.")
+            exit()
         ## condtition for user chosing right at the sleeping dog
         elif sleeping_dog_choice == "r":
             print("You go right.\n You have entered the toilets where you find your friend, it seems theres nowhere else to go apart from forwards out the window.\n They offers to give you a lift, what do you decide to do? ")
@@ -25,14 +26,15 @@ def prison_break():
                 ## condition for chosing left at the courtyard
                 if court_yard_choice == "l":
                     print("You go left.\n You found the hole in the fence and succesfully escaped Pentonville.\n Congratulations.")
-                ## conditino for chosing right at the courtyard  
+                ## condition for chosing right at the courtyard  
                 elif court_yard_choice == "r":
                     print("You go right.\n You get spotted by a guard on the watch tower, game over.")
+                    exit()
                 ## condition for any other input at the courtyard
                 else: print("You cannot move in this direction")
             ## condition for any other input at the sleeping dog
             else: print("You cannot move in this direction")
-        ## condition for chosing forward at the sleeping dog          
+        ## condition for choosing forward at the sleeping dog          
         elif sleeping_dog_choice == "f":
             print("You go forward.\n You find yourself in the canteen.\n Luckily no one is here right now.\n There are three possible doors to take, which one do you chose? ")
             ## asking the user to choose a direction at the canteen
@@ -42,17 +44,20 @@ def prison_break():
                 print("You go left. You have found yourself in the guards room... luckily theres no guards in here right now...\n You find the set of keys for the staff exit.\n Which door do you take out of the guards room?")
                 ## asking user to choose a direction from the guards room
                 guards_room_choice = input("Which door do you want to take?")
-                ## condidition for chosing left or right in the guards room
+                ## condition for chosing left or right in the guards room
                 if guards_room_choice == "l" or "r":
                     print("You run into a guard, game over")
+                    exit()
                 ## condition for chosing forwards in the gaurds room    
                 elif guards_room_choice == "f":
-                    print("You successfully exit through the staff exit without being caught.\n Congratulations.")
+                    print("You successfully exit through the staff exit without being caught.\n Congratulations, you have beaten the game!.")
+                    exit()
                 ## condition for any other input in the guards room    
                 else: print("You cannot move in this direction")
             ## condition for chosing right at the canteen        
             elif canteen_choice == "r":
                 print("You go right.\n You enter the kitchen but the chef is on duty and rings the alarm, game over.")
+                exit()
             ## condition for chosing forwards in the canteen
             elif canteen_choice == "f":
                 print("You go forward.\n You are in a storage cupboard with nowhere else to go, you must turn back.")
@@ -60,9 +65,11 @@ def prison_break():
             else: print("You cannot move in this direction")
     ## condition for user chosing right in the hallway   
     elif hallway_choice == "r":
-        print("You run into a guard, game over.") 
-    ## conditino for any other input    
-    else: print("You cannot move in this direction. Please choose left or right")   
+        print("You run into a guard, game over.")
+        exit()
+    ## condition for any other input    
+    else: print("You cannot move in this direction. Please choose left or right")
+
         
 
 prison_break()
