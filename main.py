@@ -103,9 +103,9 @@ def choose_direction(current):
 
     elif current == 9:
         if choosen_direction == "l":
-            room14()
+            room13()
         elif choosen_direction == "r":
-            room15()
+            room14()
         elif choosen_direction == "b":
             room5()
         elif choosen_direction == "f":
@@ -217,19 +217,19 @@ def room12():
     print("The door leads out to the courtyard where you get spotted by a guard, game over.")
     print("Game Over")
 
+# Room 13 logic
+def room13():
+    print('\n')
+    print("-" * 100)
+    TRACK.append(13)
+    print("You found the hole in the fence and succesfully escaped Pentonville.\n Congratulations.")
+    print("Congratz!")
+
 # Room 14 logic
 def room14():
     print('\n')
     print("-" * 100)
     TRACK.append(14)
-    print("You found the hole in the fence and succesfully escaped Pentonville.\n Congratulations.")
-    print("Congratz!")
-
-# Room 15 logic
-def room15():
-    print('\n')
-    print("-" * 100)
-    TRACK.append(15)
     print("You get spotted by a guard on the watch tower, game over.")
     print("Game Over")
 
