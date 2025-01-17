@@ -1,4 +1,4 @@
-﻿# text-based-adventure-game
+﻿# Text Based Adventure Game: Prison Break, Room 3 Production
 
 # The rules
 
@@ -18,19 +18,4 @@ other than the listed options they will be asked to enter again
 
 ● There are 2 possible “rooms” to escape, 6 that lead to game over, 15 rooms in total
 
-Concepts we use:
-
-● Strings
-
-● Variables
-
-● Input/Output
-
-● If/Else Statements
-
-● Print
-
-● List
-
-● Integers
 
