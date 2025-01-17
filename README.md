@@ -18,5 +18,6 @@ other than the listed options they will be asked to enter again
 
 ● There are 2 possible “rooms” to escape, 6 that lead to game over, 15 rooms in total
 
+# The Map/Structure
 
 ![Image](https://github.com/user-attachments/assets/bb9598a4-5174-4bae-8b76-6d912dfa09e2)
