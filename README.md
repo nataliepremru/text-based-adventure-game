@@ -16,7 +16,7 @@ room with more options to progress or caught by a guard and “game over”
 ● If the direction they enter does not lead anywhere, or the player enters anything 
 other than the listed options they will be asked to enter again
 
-● There are 2 possible “rooms” to escape, 6 that lead to game over, 15 rooms in total
+● There are 2 possible rooms to escape, 6 that lead to game over, 15 rooms in total
 
 # The Map/Structure
 
